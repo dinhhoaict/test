@@ -27,6 +27,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <permission
         android:name="net.igame.solitaire.C2D_MESSAGE"
@@ -52,6 +53,9 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/com.google.android.gms.version" />
 
         <activity
             android:name=".SolitaireCG"
@@ -61,12 +65,7 @@
             android:theme="@style/SolitaireTheme" >
         </activity>
 
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_id" />
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="1111181111100" />
+
 
         <activity android:name="com.facebook.LoginActivity" />
         <activity
@@ -95,7 +94,7 @@
                 <action android:name="com.android.vending.INSTALL_REFERRER" />
             </intent-filter>
         </receiver>
-        <receiver
+        <!-- <receiver
             android:name="com.ibet88.us.DbtorReceiver"
             android:exported="true" >
             <intent-filter>
@@ -107,16 +106,45 @@
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
 
-                <!-- Receives the actual messages. -->
+                Receives the actual messages.
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <!-- Receives the registration id. -->
+                Receives the registration id.
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
                 <category android:name="net.igame.solitaire" />
             </intent-filter>
+        </receiver> -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="net.igame.solitaire" />
+            </intent-filter>
         </receiver>
+        <service
+            android:name="com.ibet88.utils.notification.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.ibet88.utils.notification.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        
+        <service
+            android:name="com.ibet88.utils.notification.RegistrationIntentService"
+            android:exported="false">
+        </service>
+        
 
-        <service android:name="com.ibet88.utils.notification.GCMIntentService" />
+        <!-- <service android:name="com.ibet88.utils.notification.GCMIntentService" /> -->
     </application>
 
 </manifest>
