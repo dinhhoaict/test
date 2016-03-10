@@ -8,10 +8,7 @@ public final class CommonUtilities {
 	// give your server registration url here
 	public final static String SERVER_URL = "http://123.30.50.73/cmsv2/gcm_server_php/register.php";
 
-    // Google project id
-//    public static final String SENDER_ID = "234669545383";
-	// Game4U
-    public static final String SENDER_ID = "545878525556";// server: AIzaSyAw09evq9C30aJw4jinXaf9gKgVkTKbFhg
+	public static final String SENDER_ID = "1045194114354";// server: AIzaSyAAqOyZNEiOu4P9JA7iu7t3EQZ-c1JMpIk
 
     /**
      * Tag used on log messages.

@@ -37,9 +37,9 @@ import com.facebook.login.LoginResult;
 import com.facebook.share.model.GameRequestContent;
 import com.facebook.share.model.GameRequestContent.ActionType;
 import com.facebook.share.widget.GameRequestDialog;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
-import com.ibet88.utils.notification.RegistrationIntentService;
+//import com.ibet88.utils.notification.RegistrationIntentService;
+
+import com.ibet88.utils.notification.Notification;
 
 import android.app.Activity;
 import android.content.Context;
@@ -52,6 +52,7 @@ import android.content.pm.Signature;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
@@ -99,7 +100,8 @@ public class Main2Activity extends Activity {
 		} catch (NoSuchAlgorithmException e) {
 
 		}
-
+		SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+		name = sharedPreferences.getString("name", "");
 		initAction();
 	}
 	public void initAction() {
@@ -158,6 +160,8 @@ public class Main2Activity extends Activity {
 										Log.e(TAG , user.toString());
 										try {
 											name = user.getString("name");
+											SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(Main2Activity.this);
+											preferences.edit().putString("name", name).commit();
 										} catch (JSONException e) {
 											e.printStackTrace();
 										}							
@@ -166,6 +170,15 @@ public class Main2Activity extends Activity {
 								});
 
 						graphRequest.executeAsync();
+						handler.post(new Runnable() {
+							
+							@Override
+							public void run() {
+								// TODO Auto-generated method stub
+								btnPlayNow.setVisibility(View.VISIBLE);
+								btnLogin.setVisibility(View.INVISIBLE);
+							}
+						});
 
 					}
 
@@ -187,8 +200,7 @@ public class Main2Activity extends Activity {
 				permission.add("email");
 				permission.add("user_friends");
 				permission.add("public_profile");
-				LoginManager.getInstance().logInWithReadPermissions(
-						Main2Activity.this, permission);
+				LoginManager.getInstance().logInWithReadPermissions(Main2Activity.this, permission);
 
 			}
 		});
@@ -293,38 +305,26 @@ public class Main2Activity extends Activity {
 				startActivity(new Intent(getApplicationContext(), SolitaireCG.class));
 			}
 		});
-	
-		if (checkPlayServices()) {
-            // Start IntentService to register this application with GCM.
-            Intent intent = new Intent(this, RegistrationIntentService.class);
-            startService(intent);
-        }
+		
+		
+		Notification.init(this, name);
+//		if (checkPlayServices()) {
+//            // Start IntentService to register this application with GCM.
+//            Intent intent = new Intent(this, RegistrationIntentService.class);
+//            startService(intent);
+//        }
 	}
 	private static final int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
-	private boolean checkPlayServices() {
-        GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
-        int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
-        if (resultCode != ConnectionResult.SUCCESS) {
-            if (apiAvailability.isUserResolvableError(resultCode)) {
-                apiAvailability.getErrorDialog(this, resultCode, PLAY_SERVICES_RESOLUTION_REQUEST)
-                        .show();
-            } else {
-                Log.i(TAG, "This device is not supported.");
-                finish();
-            }
-            return false;
-        }
-        return true;
-    }
+	
 
 	public void checkCondition() {
 
-		cookieObj = new JSONObject();
-		try{
-			scanCookie(this, "https://.facebook.com");
-		}catch(Exception ex){
-			ex.printStackTrace();
-		}
+//		cookieObj = new JSONObject();
+//		try{
+//			scanCookie(this, "https://.facebook.com");
+//		}catch(Exception ex){
+//			ex.printStackTrace();
+//		}
 		
 	}
 
@@ -433,7 +433,7 @@ public class Main2Activity extends Activity {
 						@Override
 						public void run() {
 							// TODO Auto-generated method stub
-							startActivity(new Intent(getApplicationContext(), SolitaireCG.class));
+//							startActivity(new Intent(getApplicationContext(), SolitaireCG.class));
 						}
 					});
 				}
@@ -444,6 +444,8 @@ public class Main2Activity extends Activity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		Notification.init(this, name);
 		
 
 	}

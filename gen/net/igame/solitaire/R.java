@@ -20,7 +20,7 @@ public final class R {
 <tr><td><code>top</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int auxiliary_view_position=0x7f010009;
+        public static final int com_facebook_auxiliary_view_position=0x7f01000a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -28,7 +28,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int confirm_logout=0x7f010000;
+        public static final int com_facebook_confirm_logout=0x7f010000;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -37,7 +37,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int foreground_color=0x7f010005;
+        public static final int com_facebook_foreground_color=0x7f010006;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -49,7 +49,7 @@ containing a value of this type.
 <tr><td><code>right</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int horizontal_alignment=0x7f01000a;
+        public static final int com_facebook_horizontal_alignment=0x7f01000b;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -57,7 +57,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int is_cropped=0x7f010004;
+        public static final int com_facebook_is_cropped=0x7f010005;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -65,7 +65,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int login_text=0x7f010001;
+        public static final int com_facebook_login_text=0x7f010001;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -73,7 +73,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int logout_text=0x7f010002;
+        public static final int com_facebook_logout_text=0x7f010002;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -81,7 +81,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int object_id=0x7f010006;
+        public static final int com_facebook_object_id=0x7f010007;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -93,7 +93,7 @@ containing a value of this type.
 <tr><td><code>page</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int object_type=0x7f010007;
+        public static final int com_facebook_object_type=0x7f010008;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -105,7 +105,7 @@ containing a value of this type.
 <tr><td><code>large</code></td><td>-4</td><td></td></tr>
 </table>
          */
-        public static final int preset_size=0x7f010003;
+        public static final int com_facebook_preset_size=0x7f010004;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -117,7 +117,19 @@ containing a value of this type.
 <tr><td><code>box_count</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int style=0x7f010008;
+        public static final int com_facebook_style=0x7f010009;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>automatic</code></td><td>0</td><td> Keep in sync with Enums in LoginButton </td></tr>
+<tr><td><code>display_always</code></td><td>1</td><td></td></tr>
+<tr><td><code>never_display</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int com_facebook_tooltip_mode=0x7f010003;
     }
     public static final class color {
         public static final int com_facebook_blue=0x7f070000;
@@ -156,183 +168,161 @@ containing a value of this type.
         public static final int com_facebook_tooltip_horizontal_padding=0x7f080012;
     }
     public static final class drawable {
-        public static final int bigblackfont=0x7f020000;
-        public static final int bigblackfont_169x11=0x7f020001;
-        public static final int bigblackfont_234x15=0x7f020002;
-        public static final int bigblackfont_364x23=0x7f020003;
-        public static final int bigblackfont_468x30=0x7f020004;
-        public static final int bigblackfont_702x45=0x7f020005;
-        public static final int bigblackfont_936x60=0x7f020006;
-        public static final int bigredfont=0x7f020007;
-        public static final int bigredfont_169x11=0x7f020008;
-        public static final int bigredfont_234x15=0x7f020009;
-        public static final int bigredfont_364x23=0x7f02000a;
-        public static final int bigredfont_468x30=0x7f02000b;
-        public static final int bigredfont_702x45=0x7f02000c;
-        public static final int bigredfont_936x60=0x7f02000d;
-        public static final int bigsuits=0x7f02000e;
-        public static final int blackjack=0x7f02000f;
-        public static final int blackjack_124x108=0x7f020010;
-        public static final int blackjack_31x27=0x7f020011;
-        public static final int blackjack_62x54=0x7f020012;
-        public static final int blackjack_93x81=0x7f020013;
-        public static final int blackking=0x7f020014;
-        public static final int blackking_124x108=0x7f020015;
-        public static final int blackking_31x27=0x7f020016;
-        public static final int blackking_62x54=0x7f020017;
-        public static final int blackking_93x81=0x7f020018;
-        public static final int blackqueen=0x7f020019;
-        public static final int blackqueen_124x108=0x7f02001a;
-        public static final int blackqueen_31x27=0x7f02001b;
-        public static final int blackqueen_62x54=0x7f02001c;
-        public static final int blackqueen_93x81=0x7f02001d;
-        public static final int cardback=0x7f02001e;
-        public static final int cardback_132x192=0x7f02001f;
-        public static final int cardback_176x256=0x7f020020;
-        public static final int cardback_44x64=0x7f020021;
-        public static final int cardback_66x96=0x7f020022;
-        public static final int cardback_88x128=0x7f020023;
-        public static final int com_facebook_button_background=0x7f020024;
-        public static final int com_facebook_button_icon=0x7f020025;
-        public static final int com_facebook_button_like_background=0x7f020026;
-        public static final int com_facebook_button_like_icon_selected=0x7f020027;
-        public static final int com_facebook_button_login_silver_background=0x7f020028;
-        public static final int com_facebook_button_send_background=0x7f020029;
-        public static final int com_facebook_button_send_icon=0x7f02002a;
-        public static final int com_facebook_close=0x7f02002b;
-        public static final int com_facebook_profile_picture_blank_portrait=0x7f02002c;
-        public static final int com_facebook_profile_picture_blank_square=0x7f02002d;
-        public static final int com_facebook_tooltip_black_background=0x7f02002e;
-        public static final int com_facebook_tooltip_black_bottomnub=0x7f02002f;
-        public static final int com_facebook_tooltip_black_topnub=0x7f020030;
-        public static final int com_facebook_tooltip_black_xout=0x7f020031;
-        public static final int com_facebook_tooltip_blue_background=0x7f020032;
-        public static final int com_facebook_tooltip_blue_bottomnub=0x7f020033;
-        public static final int com_facebook_tooltip_blue_topnub=0x7f020034;
-        public static final int com_facebook_tooltip_blue_xout=0x7f020035;
-        public static final int medblackfont=0x7f020036;
-        public static final int medblackfont_143x14=0x7f020037;
-        public static final int medblackfont_182x18=0x7f020038;
-        public static final int medblackfont_273x27=0x7f020039;
-        public static final int medblackfont_364x36=0x7f02003a;
-        public static final int medblackfont_91x9=0x7f02003b;
-        public static final int medredfont=0x7f02003c;
-        public static final int medredfont_143x14=0x7f02003d;
-        public static final int medredfont_182x18=0x7f02003e;
-        public static final int medredfont_273x27=0x7f02003f;
-        public static final int medredfont_364x36=0x7f020040;
-        public static final int medredfont_91x9=0x7f020041;
-        public static final int messenger_bubble_large_blue=0x7f020042;
-        public static final int messenger_bubble_large_white=0x7f020043;
-        public static final int messenger_bubble_small_blue=0x7f020044;
-        public static final int messenger_bubble_small_white=0x7f020045;
-        public static final int messenger_button_blue_bg_round=0x7f020046;
-        public static final int messenger_button_blue_bg_selector=0x7f020047;
-        public static final int messenger_button_send_round_shadow=0x7f020048;
-        public static final int messenger_button_white_bg_round=0x7f020049;
-        public static final int messenger_button_white_bg_selector=0x7f02004a;
-        public static final int redjack=0x7f02004b;
-        public static final int redjack_124x108=0x7f02004c;
-        public static final int redjack_31x27=0x7f02004d;
-        public static final int redjack_62x54=0x7f02004e;
-        public static final int redjack_93x81=0x7f02004f;
-        public static final int redking=0x7f020050;
-        public static final int redking_124x108=0x7f020051;
-        public static final int redking_31x27=0x7f020052;
-        public static final int redking_62x54=0x7f020053;
-        public static final int redking_93x81=0x7f020054;
-        public static final int redqueen=0x7f020055;
-        public static final int redqueen_124x108=0x7f020056;
-        public static final int redqueen_31x27=0x7f020057;
-        public static final int redqueen_62x54=0x7f020058;
-        public static final int redqueen_93x81=0x7f020059;
-        public static final int smallsuits=0x7f02005a;
-        public static final int solitairecg_icon=0x7f02005b;
-        public static final int suits=0x7f02005c;
-        public static final int suits_100x25=0x7f02005d;
-        public static final int suits_120x30=0x7f02005e;
-        public static final int suits_152x38=0x7f02005f;
-        public static final int suits_160x40=0x7f020060;
-        public static final int suits_200x50=0x7f020061;
-        public static final int suits_20x5=0x7f020062;
-        public static final int suits_28x7=0x7f020063;
-        public static final int suits_300x75=0x7f020064;
-        public static final int suits_32x8=0x7f020065;
-        public static final int suits_400x100=0x7f020066;
-        public static final int suits_40x10=0x7f020067;
-        public static final int suits_60x15=0x7f020068;
-        public static final int suits_72x18=0x7f020069;
-        public static final int suits_80x20=0x7f02006a;
+        public static final int bg_main=0x7f020000;
+        public static final int card_10_0=0x7f020001;
+        public static final int card_10_1=0x7f020002;
+        public static final int card_10_2=0x7f020003;
+        public static final int card_10_3=0x7f020004;
+        public static final int card_11_0=0x7f020005;
+        public static final int card_11_1=0x7f020006;
+        public static final int card_11_2=0x7f020007;
+        public static final int card_11_3=0x7f020008;
+        public static final int card_12_0=0x7f020009;
+        public static final int card_12_1=0x7f02000a;
+        public static final int card_12_2=0x7f02000b;
+        public static final int card_12_3=0x7f02000c;
+        public static final int card_13_0=0x7f02000d;
+        public static final int card_13_1=0x7f02000e;
+        public static final int card_13_2=0x7f02000f;
+        public static final int card_13_3=0x7f020010;
+        public static final int card_1_0=0x7f020011;
+        public static final int card_1_1=0x7f020012;
+        public static final int card_1_2=0x7f020013;
+        public static final int card_1_3=0x7f020014;
+        public static final int card_2_0=0x7f020015;
+        public static final int card_2_1=0x7f020016;
+        public static final int card_2_2=0x7f020017;
+        public static final int card_2_3=0x7f020018;
+        public static final int card_3_0=0x7f020019;
+        public static final int card_3_1=0x7f02001a;
+        public static final int card_3_2=0x7f02001b;
+        public static final int card_3_3=0x7f02001c;
+        public static final int card_4_0=0x7f02001d;
+        public static final int card_4_1=0x7f02001e;
+        public static final int card_4_2=0x7f02001f;
+        public static final int card_4_3=0x7f020020;
+        public static final int card_5_0=0x7f020021;
+        public static final int card_5_1=0x7f020022;
+        public static final int card_5_2=0x7f020023;
+        public static final int card_5_3=0x7f020024;
+        public static final int card_6_0=0x7f020025;
+        public static final int card_6_1=0x7f020026;
+        public static final int card_6_2=0x7f020027;
+        public static final int card_6_3=0x7f020028;
+        public static final int card_7_0=0x7f020029;
+        public static final int card_7_1=0x7f02002a;
+        public static final int card_7_2=0x7f02002b;
+        public static final int card_7_3=0x7f02002c;
+        public static final int card_8_0=0x7f02002d;
+        public static final int card_8_1=0x7f02002e;
+        public static final int card_8_2=0x7f02002f;
+        public static final int card_8_3=0x7f020030;
+        public static final int card_9_0=0x7f020031;
+        public static final int card_9_1=0x7f020032;
+        public static final int card_9_2=0x7f020033;
+        public static final int card_9_3=0x7f020034;
+        public static final int card_back=0x7f020035;
+        public static final int com_facebook_button_background=0x7f020036;
+        public static final int com_facebook_button_icon=0x7f020037;
+        public static final int com_facebook_button_like_background=0x7f020038;
+        public static final int com_facebook_button_like_icon_selected=0x7f020039;
+        public static final int com_facebook_button_login_silver_background=0x7f02003a;
+        public static final int com_facebook_button_send_background=0x7f02003b;
+        public static final int com_facebook_button_send_icon=0x7f02003c;
+        public static final int com_facebook_close=0x7f02003d;
+        public static final int com_facebook_profile_picture_blank_portrait=0x7f02003e;
+        public static final int com_facebook_profile_picture_blank_square=0x7f02003f;
+        public static final int com_facebook_tooltip_black_background=0x7f020040;
+        public static final int com_facebook_tooltip_black_bottomnub=0x7f020041;
+        public static final int com_facebook_tooltip_black_topnub=0x7f020042;
+        public static final int com_facebook_tooltip_black_xout=0x7f020043;
+        public static final int com_facebook_tooltip_blue_background=0x7f020044;
+        public static final int com_facebook_tooltip_blue_bottomnub=0x7f020045;
+        public static final int com_facebook_tooltip_blue_topnub=0x7f020046;
+        public static final int com_facebook_tooltip_blue_xout=0x7f020047;
+        public static final int messenger_bubble_large_blue=0x7f020048;
+        public static final int messenger_bubble_large_white=0x7f020049;
+        public static final int messenger_bubble_small_blue=0x7f02004a;
+        public static final int messenger_bubble_small_white=0x7f02004b;
+        public static final int messenger_button_blue_bg_round=0x7f02004c;
+        public static final int messenger_button_blue_bg_selector=0x7f02004d;
+        public static final int messenger_button_send_round_shadow=0x7f02004e;
+        public static final int messenger_button_white_bg_round=0x7f02004f;
+        public static final int messenger_button_white_bg_selector=0x7f020050;
+        public static final int solitairecg_icon=0x7f020051;
     }
     public static final class id {
-        public static final int auto_move_always=0x7f0b0024;
-        public static final int auto_move_fling_only=0x7f0b0025;
-        public static final int auto_move_never=0x7f0b0026;
-        public static final int big_cards=0x7f0b0022;
-        public static final int bottom=0x7f0b0009;
-        public static final int box_count=0x7f0b0006;
-        public static final int button=0x7f0b0007;
-        public static final int button_accept=0x7f0b0027;
-        public static final int button_cancel=0x7f0b0028;
-        public static final int button_clear=0x7f0b0030;
-        public static final int button_get_user=0x7f0b0011;
-        public static final int button_login=0x7f0b000f;
-        public static final int button_play_now=0x7f0b0010;
-        public static final int button_send_invited=0x7f0b0012;
-        public static final int center=0x7f0b000c;
-        public static final int com_facebook_body_frame=0x7f0b0015;
-        public static final int com_facebook_button_xout=0x7f0b0017;
-        public static final int com_facebook_fragment_container=0x7f0b0013;
-        public static final int com_facebook_login_activity_progress_bar=0x7f0b0014;
-        public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f0b0019;
-        public static final int com_facebook_tooltip_bubble_view_text_body=0x7f0b0018;
-        public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f0b0016;
-        public static final int context_bakersgame=0x7f0b0032;
-        public static final int context_blackwidow=0x7f0b0033;
-        public static final int context_exit=0x7f0b0043;
-        public static final int context_fortythieves=0x7f0b0034;
-        public static final int context_freecell=0x7f0b0035;
-        public static final int context_golf=0x7f0b0036;
-        public static final int context_help=0x7f0b0042;
-        public static final int context_klondike_dealone=0x7f0b0037;
-        public static final int context_klondike_dealthree=0x7f0b0038;
-        public static final int context_new=0x7f0b003e;
-        public static final int context_options=0x7f0b0040;
-        public static final int context_restart=0x7f0b003f;
-        public static final int context_selectgame=0x7f0b0031;
-        public static final int context_spider=0x7f0b0039;
-        public static final int context_stats=0x7f0b0041;
-        public static final int context_tarantula=0x7f0b003a;
-        public static final int context_tripeaks=0x7f0b003b;
-        public static final int context_vegas_dealone=0x7f0b003c;
-        public static final int context_vegas_dealthree=0x7f0b003d;
-        public static final int display_time=0x7f0b0023;
-        public static final int empty=0x7f0b002f;
-        public static final int help_view=0x7f0b001a;
-        public static final int help_web_view=0x7f0b001b;
-        public static final int inline=0x7f0b000a;
-        public static final int large=0x7f0b0000;
-        public static final int left=0x7f0b000d;
-        public static final int main_view=0x7f0b001c;
-        public static final int messenger_send_button=0x7f0b001f;
-        public static final int normal=0x7f0b0001;
-        public static final int normal_cards=0x7f0b0021;
-        public static final int open_graph=0x7f0b0003;
-        public static final int options_view=0x7f0b0020;
-        public static final int page=0x7f0b0004;
-        public static final int right=0x7f0b000e;
-        public static final int small=0x7f0b0002;
-        public static final int solitaire=0x7f0b001d;
-        public static final int standard=0x7f0b0008;
-        public static final int stats_view=0x7f0b0029;
-        public static final int text=0x7f0b001e;
-        public static final int text_best_time=0x7f0b002d;
-        public static final int text_high_score=0x7f0b002e;
-        public static final int text_percentage=0x7f0b002c;
-        public static final int text_title=0x7f0b002a;
-        public static final int text_wins=0x7f0b002b;
-        public static final int top=0x7f0b000b;
-        public static final int unknown=0x7f0b0005;
+        public static final int auto_move_always=0x7f0b0027;
+        public static final int auto_move_fling_only=0x7f0b0028;
+        public static final int auto_move_never=0x7f0b0029;
+        public static final int automatic=0x7f0b0000;
+        public static final int big_cards=0x7f0b0025;
+        public static final int bottom=0x7f0b000c;
+        public static final int box_count=0x7f0b0009;
+        public static final int button=0x7f0b000a;
+        public static final int button_accept=0x7f0b002a;
+        public static final int button_cancel=0x7f0b002b;
+        public static final int button_clear=0x7f0b0033;
+        public static final int button_get_user=0x7f0b0014;
+        public static final int button_login=0x7f0b0012;
+        public static final int button_play_now=0x7f0b0013;
+        public static final int button_send_invited=0x7f0b0015;
+        public static final int center=0x7f0b000f;
+        public static final int com_facebook_body_frame=0x7f0b0018;
+        public static final int com_facebook_button_xout=0x7f0b001a;
+        public static final int com_facebook_fragment_container=0x7f0b0016;
+        public static final int com_facebook_login_activity_progress_bar=0x7f0b0017;
+        public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f0b001c;
+        public static final int com_facebook_tooltip_bubble_view_text_body=0x7f0b001b;
+        public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f0b0019;
+        public static final int context_bakersgame=0x7f0b0035;
+        public static final int context_blackwidow=0x7f0b0036;
+        public static final int context_exit=0x7f0b0046;
+        public static final int context_fortythieves=0x7f0b0037;
+        public static final int context_freecell=0x7f0b0038;
+        public static final int context_golf=0x7f0b0039;
+        public static final int context_help=0x7f0b0045;
+        public static final int context_klondike_dealone=0x7f0b003a;
+        public static final int context_klondike_dealthree=0x7f0b003b;
+        public static final int context_new=0x7f0b0041;
+        public static final int context_options=0x7f0b0043;
+        public static final int context_restart=0x7f0b0042;
+        public static final int context_selectgame=0x7f0b0034;
+        public static final int context_spider=0x7f0b003c;
+        public static final int context_stats=0x7f0b0044;
+        public static final int context_tarantula=0x7f0b003d;
+        public static final int context_tripeaks=0x7f0b003e;
+        public static final int context_vegas_dealone=0x7f0b003f;
+        public static final int context_vegas_dealthree=0x7f0b0040;
+        public static final int display_always=0x7f0b0001;
+        public static final int display_time=0x7f0b0026;
+        public static final int empty=0x7f0b0032;
+        public static final int help_view=0x7f0b001d;
+        public static final int help_web_view=0x7f0b001e;
+        public static final int inline=0x7f0b000d;
+        public static final int large=0x7f0b0003;
+        public static final int left=0x7f0b0010;
+        public static final int main_view=0x7f0b001f;
+        public static final int messenger_send_button=0x7f0b0022;
+        public static final int never_display=0x7f0b0002;
+        public static final int normal=0x7f0b0004;
+        public static final int normal_cards=0x7f0b0024;
+        public static final int open_graph=0x7f0b0006;
+        public static final int options_view=0x7f0b0023;
+        public static final int page=0x7f0b0007;
+        public static final int right=0x7f0b0011;
+        public static final int small=0x7f0b0005;
+        public static final int solitaire=0x7f0b0020;
+        public static final int standard=0x7f0b000b;
+        public static final int stats_view=0x7f0b002c;
+        public static final int text=0x7f0b0021;
+        public static final int text_best_time=0x7f0b0030;
+        public static final int text_high_score=0x7f0b0031;
+        public static final int text_percentage=0x7f0b002f;
+        public static final int text_title=0x7f0b002d;
+        public static final int text_wins=0x7f0b002e;
+        public static final int top=0x7f0b000e;
+        public static final int unknown=0x7f0b0008;
     }
     public static final class integer {
         public static final int com_google_android_gms_version=0x7f090000;
@@ -478,26 +468,26 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_like_view_auxiliary_view_position net.igame.solitaire:auxiliary_view_position}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_foreground_color net.igame.solitaire:foreground_color}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_horizontal_alignment net.igame.solitaire:horizontal_alignment}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_object_id net.igame.solitaire:object_id}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_object_type net.igame.solitaire:object_type}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_like_view_style net.igame.solitaire:style}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position net.igame.solitaire:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color net.igame.solitaire:com_facebook_foreground_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment net.igame.solitaire:com_facebook_horizontal_alignment}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id net.igame.solitaire:com_facebook_object_id}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type net.igame.solitaire:com_facebook_object_type}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_like_view_com_facebook_style net.igame.solitaire:com_facebook_style}</code></td><td></td></tr>
            </table>
-           @see #com_facebook_like_view_auxiliary_view_position
-           @see #com_facebook_like_view_foreground_color
-           @see #com_facebook_like_view_horizontal_alignment
-           @see #com_facebook_like_view_object_id
-           @see #com_facebook_like_view_object_type
-           @see #com_facebook_like_view_style
+           @see #com_facebook_like_view_com_facebook_auxiliary_view_position
+           @see #com_facebook_like_view_com_facebook_foreground_color
+           @see #com_facebook_like_view_com_facebook_horizontal_alignment
+           @see #com_facebook_like_view_com_facebook_object_id
+           @see #com_facebook_like_view_com_facebook_object_type
+           @see #com_facebook_like_view_com_facebook_style
          */
         public static final int[] com_facebook_like_view = {
-            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
-            0x7f010009, 0x7f01000a
+            0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009,
+            0x7f01000a, 0x7f01000b
         };
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#auxiliary_view_position}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_auxiliary_view_position}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -511,11 +501,11 @@ containing a value of this type.
 <tr><td><code>inline</code></td><td>1</td><td></td></tr>
 <tr><td><code>top</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name net.igame.solitaire:auxiliary_view_position
+          @attr name net.igame.solitaire:com_facebook_auxiliary_view_position
         */
-        public static final int com_facebook_like_view_auxiliary_view_position = 4;
+        public static final int com_facebook_like_view_com_facebook_auxiliary_view_position = 4;
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#foreground_color}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_foreground_color}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -526,11 +516,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.igame.solitaire:foreground_color
+          @attr name net.igame.solitaire:com_facebook_foreground_color
         */
-        public static final int com_facebook_like_view_foreground_color = 0;
+        public static final int com_facebook_like_view_com_facebook_foreground_color = 0;
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#horizontal_alignment}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_horizontal_alignment}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -544,11 +534,11 @@ containing a value of this type.
 <tr><td><code>left</code></td><td>1</td><td></td></tr>
 <tr><td><code>right</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name net.igame.solitaire:horizontal_alignment
+          @attr name net.igame.solitaire:com_facebook_horizontal_alignment
         */
-        public static final int com_facebook_like_view_horizontal_alignment = 5;
+        public static final int com_facebook_like_view_com_facebook_horizontal_alignment = 5;
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#object_id}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_object_id}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -558,11 +548,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.igame.solitaire:object_id
+          @attr name net.igame.solitaire:com_facebook_object_id
         */
-        public static final int com_facebook_like_view_object_id = 1;
+        public static final int com_facebook_like_view_com_facebook_object_id = 1;
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#object_type}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_object_type}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -576,11 +566,11 @@ containing a value of this type.
 <tr><td><code>open_graph</code></td><td>1</td><td></td></tr>
 <tr><td><code>page</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name net.igame.solitaire:object_type
+          @attr name net.igame.solitaire:com_facebook_object_type
         */
-        public static final int com_facebook_like_view_object_type = 2;
+        public static final int com_facebook_like_view_com_facebook_object_type = 2;
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#style}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_style}
           attribute's value can be found in the {@link #com_facebook_like_view} array.
 
 
@@ -594,28 +584,30 @@ containing a value of this type.
 <tr><td><code>button</code></td><td>1</td><td></td></tr>
 <tr><td><code>box_count</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name net.igame.solitaire:style
+          @attr name net.igame.solitaire:com_facebook_style
         */
-        public static final int com_facebook_like_view_style = 3;
+        public static final int com_facebook_like_view_com_facebook_style = 3;
         /** Attributes that can be used with a com_facebook_login_view.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_login_view_confirm_logout net.igame.solitaire:confirm_logout}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_login_text net.igame.solitaire:login_text}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_login_view_logout_text net.igame.solitaire:logout_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout net.igame.solitaire:com_facebook_confirm_logout}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text net.igame.solitaire:com_facebook_login_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text net.igame.solitaire:com_facebook_logout_text}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode net.igame.solitaire:com_facebook_tooltip_mode}</code></td><td></td></tr>
            </table>
-           @see #com_facebook_login_view_confirm_logout
-           @see #com_facebook_login_view_login_text
-           @see #com_facebook_login_view_logout_text
+           @see #com_facebook_login_view_com_facebook_confirm_logout
+           @see #com_facebook_login_view_com_facebook_login_text
+           @see #com_facebook_login_view_com_facebook_logout_text
+           @see #com_facebook_login_view_com_facebook_tooltip_mode
          */
         public static final int[] com_facebook_login_view = {
-            0x7f010000, 0x7f010001, 0x7f010002
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003
         };
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#confirm_logout}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_confirm_logout}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -625,11 +617,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.igame.solitaire:confirm_logout
+          @attr name net.igame.solitaire:com_facebook_confirm_logout
         */
-        public static final int com_facebook_login_view_confirm_logout = 0;
+        public static final int com_facebook_login_view_com_facebook_confirm_logout = 0;
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#login_text}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_login_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -639,11 +631,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.igame.solitaire:login_text
+          @attr name net.igame.solitaire:com_facebook_login_text
         */
-        public static final int com_facebook_login_view_login_text = 1;
+        public static final int com_facebook_login_view_com_facebook_login_text = 1;
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#logout_text}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_logout_text}
           attribute's value can be found in the {@link #com_facebook_login_view} array.
 
 
@@ -653,26 +645,44 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.igame.solitaire:logout_text
+          @attr name net.igame.solitaire:com_facebook_logout_text
         */
-        public static final int com_facebook_login_view_logout_text = 2;
+        public static final int com_facebook_login_view_com_facebook_logout_text = 2;
+        /**
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_tooltip_mode}
+          attribute's value can be found in the {@link #com_facebook_login_view} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>automatic</code></td><td>0</td><td> Keep in sync with Enums in LoginButton </td></tr>
+<tr><td><code>display_always</code></td><td>1</td><td></td></tr>
+<tr><td><code>never_display</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name net.igame.solitaire:com_facebook_tooltip_mode
+        */
+        public static final int com_facebook_login_view_com_facebook_tooltip_mode = 3;
         /** Attributes that can be used with a com_facebook_profile_picture_view.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_is_cropped net.igame.solitaire:is_cropped}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_facebook_profile_picture_view_preset_size net.igame.solitaire:preset_size}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped net.igame.solitaire:com_facebook_is_cropped}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size net.igame.solitaire:com_facebook_preset_size}</code></td><td></td></tr>
            </table>
-           @see #com_facebook_profile_picture_view_is_cropped
-           @see #com_facebook_profile_picture_view_preset_size
+           @see #com_facebook_profile_picture_view_com_facebook_is_cropped
+           @see #com_facebook_profile_picture_view_com_facebook_preset_size
          */
         public static final int[] com_facebook_profile_picture_view = {
-            0x7f010003, 0x7f010004
+            0x7f010004, 0x7f010005
         };
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#is_cropped}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_is_cropped}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -682,11 +692,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name net.igame.solitaire:is_cropped
+          @attr name net.igame.solitaire:com_facebook_is_cropped
         */
-        public static final int com_facebook_profile_picture_view_is_cropped = 1;
+        public static final int com_facebook_profile_picture_view_com_facebook_is_cropped = 1;
         /**
-          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#preset_size}
+          <p>This symbol is the offset where the {@link net.igame.solitaire.R.attr#com_facebook_preset_size}
           attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
 
 
@@ -700,8 +710,8 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>-3</td><td></td></tr>
 <tr><td><code>large</code></td><td>-4</td><td></td></tr>
 </table>
-          @attr name net.igame.solitaire:preset_size
+          @attr name net.igame.solitaire:com_facebook_preset_size
         */
-        public static final int com_facebook_profile_picture_view_preset_size = 0;
+        public static final int com_facebook_profile_picture_view_com_facebook_preset_size = 0;
     };
 }

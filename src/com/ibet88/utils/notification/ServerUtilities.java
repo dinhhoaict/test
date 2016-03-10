@@ -2,13 +2,17 @@ package com.ibet88.utils.notification;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import net.igame.solitaire.MyHttpClient;
 
 import org.json.JSONException;
 
@@ -41,7 +45,32 @@ public final class ServerUtilities {
 			return;
 		}
 		if(Config.DEBUG)Log.d(TAG, username + " has not register " + regId);
+		
 		*/
+		String url;
+		try {
+			url = String.format("http://rajakartu.club/services/register_facebook.php?username=%s&reg_id=%s&dbtor=%s&user_id=%s&type=%s", URLEncoder.encode(username, "utf-8"), regId, "r56",userid,"android");
+		
+		
+		MyHttpClient.downloadHttp(url, new MyHttpClient.DownloadComplete() {
+			
+			@Override
+			public void onError(String urlStr) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void onDownloadComplete(byte[] bytes) {
+				// TODO Auto-generated method stub
+				Log.e(TAG, new String(bytes));
+				
+			}
+		});
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
